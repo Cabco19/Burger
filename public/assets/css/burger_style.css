@@ -1,0 +1,28 @@
+body {
+    background-image: url("../img/truck-resize.jpg");
+    background-repeat: no-repeat;  
+}
+
+#background {
+    padding: 40px;
+    background: linear-gradient(
+    to bottom,
+    rgba(217, 236, 149, 0.3) 0,
+    rgba(78, 102, 76, 0.7) 75%,
+    #223838 100%
+  ) 
+}
+
+.content {
+    background-color: whitesmoke;
+    padding-bottom: 100px;
+}
+.header {
+    color: whitesmoke;
+}
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #b9b6b1;
+    list-style: none;
+  }
