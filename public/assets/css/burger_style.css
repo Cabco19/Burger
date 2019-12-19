@@ -1,6 +1,7 @@
 body {
     background-image: url("../img/truck-resize.jpg");
     background-repeat: no-repeat;  
+    background-color: black;
 }
 
 #background {
@@ -23,6 +24,5 @@ body {
 li {
     padding: 5px;
     margin: 5px;
-    background: #b9b6b1;
     list-style: none;
   }
