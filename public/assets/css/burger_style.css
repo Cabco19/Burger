@@ -1,7 +1,8 @@
 body {
+    background-color: #0c0b0b;
     background-image: url("../img/truck-resize.jpg");
     background-repeat: no-repeat;  
-    background-color: black;
+    
 }
 
 #background {
@@ -17,12 +18,38 @@ body {
 .content {
     background-color: whitesmoke;
     padding-bottom: 100px;
+    margin-top: 0;
 }
 .header {
     color: whitesmoke;
+    height: 144px;
 }
 li {
     padding: 5px;
     margin: 5px;
     list-style: none;
-  }
+}
+hr.style12 {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+    border: 0;
+}
+.text-color {
+    color: rgb(79, 66, 126);
+    
+}
+.avail-col {
+    background-color: #e0e4d7;
+}
+.avail-col h4 {    
+    background-color: #575f5a;
+    color: #e3e7e5;
+}
+.devour-col {
+    background-color: #e0e4d7;
+
+}
+.devour-col h4 {    
+    background-color: #575f5a;
+    color: #e3e7e5;
+}
