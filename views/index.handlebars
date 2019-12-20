@@ -14,45 +14,43 @@
     <div class="col py-4">
     <div class="text-center">
     
-    <h3>Place an order for your burger now.</h3>
+    <h3>Place an order for your burger below.</h3>
     </div>
     </div>
   </div>
 
-    <div class="row">  
-    
-    <div class="col">
-      
+   <div class="row">  
+    <div class="col-2">
     </div>
-    <div class="col-5">
-      
-  <form  class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="devour"></label><br>
-    <input type="hidden" id="devour" name="devoured" value="0">
-    <button type="submit" class="text-center">Place Order</button>  
-  </div>  
-  </form>
-
+    <div class="col-8">
+      <form class="create-form">
+        <div class="form-group">
+          <label for="ca">Burger Name:</label>
+          <input type="text" id="ca" name="name">
+          <label for="devour"></label>
+      <input type="hidden" id="devour" name="devoured" value="0">
+      <button type="submit" class="text-center">Order Burger</button>  
+        </div>
     </div>
+    <div class="col-2">
+ 
+      </div>
+  </form>    
     <div class="col">
       
     </div>
   </div>
   <div class="row">
+    <div class="col-1">      
+    </div>
+    
+    <div class="col-4">
     <ul>
     {{#each burgers}}
      {{#unless this.devoured}}
-     <div class="col-xs-9 text-center">
-      <li> {{this.id}}. {{this.burger_name}}<br/>
-     </div>
-     <div class="col-xs-3 text text-center">
+     <div class="col-xs-9">
+      <li> {{this.id}}. {{this.burger_name}}
+
        <form class="nothing">
          <input type="hidden" name="burger_id" type="text" value={{this.id}}>
          <button class="testNew btn btn-secondary btn-sm" data-id="{{id}}">Devour Now!</button>
@@ -61,14 +59,19 @@
        {{/unless}}
        {{/each}}
        </ul>
-</div>
-       <ul>
+  </div>
+  <div class="col-4">
+
+         <ul>
          {{#each burgers}}
          {{#if this.devoured }}
          <li> {{this.id}}. {{this.burger_name}}</li>
          {{/if}}
          {{/each}}
        </ul>
+       </div>
+</div>
+
      
  
 
